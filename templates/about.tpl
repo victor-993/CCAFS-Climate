@@ -24,7 +24,12 @@
     </ul>
     <p>Citation of the <a href="/spatial_disaggregation/">spatial disaggregation method dataset</a> may be done as follows:</p>
     <ul>
+	<li>
+	 Navarro-Racines, C., Tarapues, J., Thornton, P. et al. High-resolution and bias-corrected CMIP5 projections for climate change impact assessments. Sci Data 7, 7 (2020) <a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">doi:10.1038/s41597-019-0343-8</a>
+	</li>
+	<!--
         <li>Ramirez, J.; Jarvis, A. 2008. <b>Disaggregation of Global Circulation Model Outputs</b>. International Center for Tropical Agriculture (CIAT); CGIAR Research Program on Climate Change, Agriculture and Food Security (CCAFS). Cali, Colombia.</li>
+	-->
     </ul>
     <p>Citation of the <a href="/pattern_scaling/">MarkSim pattern scaled dataset</a> may be done as follows:</p>
     <ul>

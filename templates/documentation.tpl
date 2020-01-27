@@ -48,104 +48,87 @@
     <br>
     <h4>Useful documents</h4>
     <ul id="document-list" type="none"> 
-		<li type="square">
-			<a href="{$smarty.const.SMARTY_DOCS_URI}/BC_methods_explaining_v2.pdf">
-				<img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
-				Bias-correction in the CCAFS-Climate Portal: A description of methodologies.
-			</a>
-		</li> 			
+	<li type="square">
+            <a href="https://doi.org/10.1038/s41597-019-0343-8">
+                <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
+                High-resolution and bias-corrected CMIP5 projections for climate change impact assessments
+            </a>
+        </li>
+
+	<li type="square">
+	    <a href="https://cgspace.cgiar.org/handle/10568/76609">
+		<img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
+		Bias-correction in the CCAFS-Climate Portal: A description of methodologies.
+	    </a>
+	</li> 			
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/mapping_data_ccafs-climate.pdf">
+            <a href="https://cgspace.cgiar.org/bitstream/handle/10568/89497/mapping_data_ccafs-climate.pdf ">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 CCAFS Climate datasets map.
             </a>
         </li>    
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/Ramirez_Bueno-Cabrera_2009_tutorial_bcvars_creation.pdf">
+            <a href="http://hdl.handle.net/10568/90732">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
-                Tutorial to generate 19 bioclimatic variables from monthly datasets.
+                Working with climate data and niche modeling: I. Creation of bioclimatic variables.
             </a>
         </li>
-        <ul>
-            <li type="circle">
-                <a href="{$smarty.const.SMARTY_DOCS_URI}/bioclimatic-variables.pdf">
-                    <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
-                    Abbreviations Used For Bioclimatic Variables.
-                </a>
-            </li>
-        </ul>
+		<li type="circle">
+			<a href="http://hdl.handle.net/10568/90730">
+				<img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
+				Abbreviations used in CCAFS climate.
+			</a>
+		</li>
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/Downscaling-WP-01.pdf">
+            <a href="http://hdl.handle.net/10568/90731">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
-                Downscaling Global Circulation Model Outputs: The Delta Method.
+                Downscaling Global Circulation Model Outputs: The Delta Method Decision and Policy Analysis Working Paper No. 1.
             </a>
         </li>
-        <ul>
-            <li type="circle">
-                <a href="{$smarty.const.SMARTY_DOCS_URI}/Data_source_and_process_flow_chart_CIAT_DELTA.pdf">
-                    <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
-                    Data Source and Process flow chart Delta Method (Hiett M., 2011).
-                </a>
-            </li>
-            <li type="circle">
-                <a href="{$smarty.const.SMARTY_DOCS_URI}/delta_disaggregation_variables.pdf">
-                    <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
-                    Abbreviations Used For Delta Method Downscaled and Disaggregation data.
-                </a>
-            </li>
-        </ul>
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/Disaggregation-WP-02.pdf">
+            <a href="https://cgspace.cgiar.org/bitstream/handle/10568/70021/Disaggregation-WP-02.pdf ">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 Disaggregation of Global Circulation Model Outputs.
             </a>
         </li>
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/Climgen-Downscaling-Tyndall.pdf">
+            <a href="http://dx.doi.org/10.1007/s10584-015-1509-9">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 The CLIMGEN model: Downscaling Tyndall.
             </a>
         </li>
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/worldclim_IJC.pdf">
+            <a href="http://dx.doi.org/10.1002/joc.1276">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 Very high resolution interpolated climate surfaces for Global Land Areas.
             </a>
         </li>                
         <li type="square">
-            <a href="http://www.metoffice.gov.uk/media/pdf/6/5/PRECIS_Handbook.pdf">
+            <a href="http://precis.metoffice.com/docs/PRECIS_Handbook.pdf">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 Generating High Resolution Climate Change Scenarios using PRECIS.
             </a>
         </li>
-        <ul>
-            <li type="circle">
-                <a href="{$smarty.const.SMARTY_DOCS_URI}/precis-variables.pdf">
-                    <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
-                    Abbreviations Used For PRECIS Data.
-                </a>
-            </li>
-        </ul>
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/Generating_Characteristic_Daily_Weather_Data_using_Downscaled_Climate_Model_Data_Jones_Thornton_Heinke_2009.pdf">
+            <a href="https://cgspace.cgiar.org/bitstream/handle/10568/2482/Jones-Thornton-Heinke-2009.pdf">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 Generating characteristic daily weather data using downscaled climate model data from IPCC's Fourth Assessment.
             </a>
         </li>
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/MarkSim_Standalone_Documentation.pdf">
+            <a href="http://hdl.handle.net/10568/90728">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 MarkSim standalone for DSSAT users (Jones et al., 2012).
             </a>
         </li>
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/MarkSim_Standalone_Documentation_v2.pdf">
+            <a href="http://hdl.handle.net/10568/90729">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 MarkSim standalone V2 for DSSAT users (Jones et al., 2013).
             </a>
         </li>		
         <li type="square">
-            <a href="{$smarty.const.SMARTY_DOCS_URI}/MarkSim_Generating_Downscaled_Weather_Data.pdf">
+            <a href="http://dx.doi.org/10.1016/j.agsy.2012.08.002">
                 <img src="{$smarty.const.SMARTY_IMG_URI}/icon-pdf.png" />
                 Generating downscaled weather data from a suite of climate models for agricultural modelling applications
             </a>

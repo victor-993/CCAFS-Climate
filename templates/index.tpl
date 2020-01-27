@@ -2,40 +2,54 @@
 {include file='header.tpl' current="home"}
 
 <div id="content" class="home" class="main_section">
+	
+		<p>
+			When citing our data please cite new paper: Navarro-Racines, C., Tarapues, J., Thornton, P. et al. High-resolution and bias-corrected CMIP5 projections for climate change impact assessments. Sci Data 7, 7 (2020) <a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">doi:10.1038/s41597-019-0343-8</a>
+		</p>
+  	
 	<div class="main_section">
 	  <table id="sections" align="centre">
 		<tbody>
 		  <tr>
-			<td>
+		  <!--
+			<td align="center">
 			  <a href="/data/">
 				<div id="section">
 				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/icon_data.png">
 				</div>
 			  </a>
-			</td>		  
-	  
-			<td>
-			  <a href="/methods/">
-				<div id="section">
-				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/menu-09.png" />
-				</div>
-			  </a>
-			</td>
-			<!--
-			<td>
-			  <a href="/bias_correction/">
-				<div id="section">
-				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/menu_index-09.png">
-				</div>
-			  </a>
-			</td>				
+			</td>	-->	  
 			<td>
 			  <a href="/downscaling/">
 				<div id="section">
-				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/menu_index-05.png">
+				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/1_SpatialDownscaling.png">
 				</div>
 			  </a>
-			</td>-->			
+			</td>
+			<td>
+			  <a href="/climatewizard/">
+				<div id="section">
+				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/menu-10.png">
+				</div>
+			  </a>
+			</td>			
+			<td>
+			  <a href="/bias_correction/">
+				<div id="section">
+				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/menu_bias-01.png">
+				</div>
+			  </a>
+			</td>			
+			<td>
+			  <a href="/methods/">
+				<div id="section">
+				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/menu_index-08.png" />
+				</div>
+			  </a>
+			</td>
+
+				
+			
 
 
 			<td>
@@ -45,13 +59,14 @@
 				</div>
 			  </a>
 			</td>
+			<!--
 			<td>
 			  <a href="/links/">
 				<div id="section">
 				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/icon_links.png">
 				</div>
 			  </a>
-			</td>
+			</td>-->
 			<td>
 			  <a href="/citations/">
 				<div id="section">
@@ -59,13 +74,14 @@
 				</div>
 			  </a>
 			</td>
+			<!--
 			<td>
 			  <a href="/contact/">
 				<div id="section">
 				  <img class="color" src="{$smarty.const.SMARTY_IMG_URI}/icon_contact.png">
 				</div>
 			  </a>
-			</td>
+			</td>-->
 		  </tr>
 		</tbody>
 	  </table>
@@ -73,8 +89,8 @@
   <div id="content-description">
     <h4>Data Provided by the CGIAR Research Program on Climate Change, Agriculture and Food Security (CCAFS)</h4>
     <p>
-      The data distributed here are in ARC GRID, and ARC ASCII format, in decimal degrees and datum WGS84. CCAFS and its partners have processed this data to provide seamless continuous future climate surfaces.
-      Users are prohibited from any commercial, non-free resale, or redistribution without explicit written permission from CCAFS or the data-developing institutions.
+      The data distributed here are in ARC GRID, and ARC ASCII format, in decimal degrees and datum WGS84.
+	  CCAFS and its partners have processed this data to provide seamless continuous future climate surfaces. 
       Users should acknowledge CCAFS as the source used in the creation of any reports, publications, new data sets, derived products, or services resulting from the use of this data set.
       For commercial access to the data, send requests to <a href="mailto:a.jarvis@cgiar.org">Andy Jarvis</a> at the International Center for Tropical Agriculture (CIAT).
     </p>
@@ -82,11 +98,7 @@
       These open-access datasets are hosted by <a href="http://aws.amazon.com/datasets/0241269495883982" target="_blank">Amazon Web Services</a>.
     </p>
     <p>
-      CCAFS provides these data without any warranty of any kind whatsoever, either express or implied, including warranties of merchantability and fitness for a particular purpose.
-      CCAFS shall not be liable for incidental, consequential, or special damages arising out of the use of any data published here.
-    </p>
-    <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ccafs-climate.org/" property="cc:attributionName" rel="cc:attributionURL">http://ccafs-climate.org/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ccafs-climate.org/" property="cc:attributionName" rel="cc:attributionURL">http://ccafs-climate.org/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
     </p>
   </div>
 </div>
@@ -180,6 +192,7 @@
 	<div>
 		<div id="info" class="left">
 		  <p class="moreInfo">For more information on CCAFS-Climate, visit the <a href="/about/">About</a> page.</p>
+		  <p class="moreInfo"><a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">Check our new article: High-resolution and bias-corrected CMIP5 projections for climate change impact assessments</a></p>
 		  <p class="chkmsg"><input type="checkbox" id="chk_showmsg">&nbsp;Don't show this message again</p>
 		</div>
 	

@@ -5,12 +5,15 @@
 </div>
 <div id="content" class="downscaling_delta">
     <h3>Statistical Downscaling (Delta Method) CMIP5 Data</h3>
+    <p>
+	Citation: Navarro-Racines, C., Tarapues, J., Thornton, P. et al. High-resolution and bias-corrected CMIP5 projections for climate change impact assessments. Sci Data 7, 7 (2020) <a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">doi:10.1038/s41597-019-0343-8</a>
+    </p>
     <hr>
     <b>Method Description</b>
 
     <p>
         Here we apply a downscaling method based on thin plate spline spatial interpolation of anomalies (deltas) of original GCM outputs.
-        Anomalies are interpolated between GCM cell centroids and are then applied to a baseline climate given by a high resolution surface (<a href="{$smarty.const.SMARTY_DOCS_URI}/worldclim_IJC.pdf">WorldClim; Hijmans et al., 2005</a>).
+        Anomalies are interpolated between GCM cell centroids and are then applied to a baseline climate given by a high resolution surface (<a target="_blank" href="http://worldclim.com/current"><i>WorldClim 1.4</i></a>; <a href="{$smarty.const.SMARTY_DOCS_URI}/worldclim_IJC.pdf">Hijmans et al., 2005</a>).
         The method makes the following gross assumptions:
     </p>
     <ol>

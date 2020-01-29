@@ -3,8 +3,9 @@
 
 <div id="content" class="home" class="main_section">
 	
-		<p>
-			When citing our SD Delta Method data please cite new paper: Navarro-Racines, C., Tarapues, J., Thornton, P. et al. High-resolution and bias-corrected CMIP5 projections for climate change impact assessments. Sci Data 7, 7 (2020) <a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">doi:10.1038/s41597-019-0343-8</a>
+		<p style="background:rgb(214,174,0);">
+			News: When citing the CCAFS-Climate Statistically Downscaled Delta Method data please cite our new paper: 
+			Navarro-Racines, C., Tarapues, J., Thornton, P., Jarvis, A., and Ramirez-Villegas, J. 2020. High-resolution and bias-corrected CMIP5 projections for climate change impact assessments. Sci Data 7, 7, <a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">doi:10.1038/s41597-019-0343-8</a>
 		</p>
   	
 	<div class="main_section">

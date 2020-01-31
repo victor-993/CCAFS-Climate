@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container">    
     <div class="wrapper">
         {include file='secondary-menu.tpl' current="$current"}
         <header>

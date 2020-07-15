@@ -5,6 +5,9 @@
 </div>
 <div id="content" class="downscaling_delta">
     <h3>Statistical Downscaling (Delta Method) CMIP5 Data</h3>
+    <p>
+	Citation: Navarro-Racines, C., Tarapues, J., Thornton, P. et al. High-resolution and bias-corrected CMIP5 projections for climate change impact assessments. Sci Data 7, 7 (2020) <a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">doi:10.1038/s41597-019-0343-8</a>
+    </p>
     <hr>
     <b>Method Description</b>
 

@@ -2,6 +2,10 @@
 {include file='header.tpl' current="home"}
 
 <div id="content" class="home" class="main_section">
+	<p style="background:#ffdd57; color: rgba(0, 0, 0, 0.7); padding: 10px; font-size: 15px;">
+			<b>News:</b> When citing the CCAFS-Climate Statistically Downscaled Delta Method data please cite our new paper: 
+			Navarro-Racines, C., Tarapues, J., Thornton, P., Jarvis, A., and Ramirez-Villegas, J. 2020. High-resolution and bias-corrected CMIP5 projections for climate change impact assessments. Sci Data 7, 7, <a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">doi:10.1038/s41597-019-0343-8</a>
+	</p>
 	<div class="main_section">
 	  <table id="sections" align="centre">
 		<tbody>
@@ -187,6 +191,7 @@
 	<div>
 		<div id="info" class="left">
 		  <p class="moreInfo">For more information on CCAFS-Climate, visit the <a href="/about/">About</a> page.</p>
+		  <p class="moreInfo"><a href="https://doi.org/10.1038/s41597-019-0343-8" target="_blank">Check our new article: High-resolution and bias-corrected CMIP5 projections for climate change impact assessments</a></p>
 		  <p class="chkmsg"><input type="checkbox" id="chk_showmsg">&nbsp;Don't show this message again</p>
 		</div>
 	

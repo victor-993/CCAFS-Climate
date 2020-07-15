@@ -53,20 +53,6 @@
                     <br>
                     <br>
                     
-                    <b>Jaime Tarapues</b>
-                    <br>
-                    <span class="contact-info">
-                    Technical Support
-                    <br>
-                    Decision and Policy Analysis (DAPA)
-                    <br>
-                    International Center for Tropical Agriculture (CIAT)
-                    <br>
-                    <a href="mailto:j.e.tarapues@cgiar.org ">j.e.tarapues@cgiar.org </a>
-                    </span>
-                    <br>
-                    <br>
-
                     <b>Julián Ramírez-Villegas</b>
                     <br>
                     <span class="contact-info">
@@ -105,6 +91,39 @@
                     <br>
                     <a href="mailto:h.f.tobon@cgiar.org">h.f.tobon@cgiar.org</a>
                     </span>
+		    <br>
+                    <br>
+
+
+		    <b>Steven Sotelo</b>
+                    <br>
+                    <span class="contact-info">
+                    Technical Support
+                    <br>
+                    Decision and Policy Analysis (DAPA)
+                    <br>
+                    International Center for Tropical Agriculture (CIAT)
+                    <br>
+                    <a href="mailto:h.sotelo@cgiar.org ">h.sotelo@cgiar.org </a>
+                    </span>
+                    <br>
+                    <br>
+
+
+		    <b>Juan Camilo Garcia</b>
+                    <br>
+                    <span class="contact-info">
+                    Technical Support
+                    <br>
+                    Decision and Policy Analysis (DAPA)
+                    <br>
+                    International Center for Tropical Agriculture (CIAT)
+                    <br>
+                    <a href="mailto:juan.garcia@cgiar.org ">juan.garcia@cgiar.org </a>
+                    </span>
+                    <br>
+                    <br>
+
                 </td>
             </tr>
         </tbody>

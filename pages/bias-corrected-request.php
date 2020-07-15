@@ -243,7 +243,8 @@ if (isset($_REQUEST["email"]) && $_REQUEST["email"] != "" && $_REQUEST["email"] 
 
   // $url = "http://gisweb.ciat.cgiar.org/Bc_Downscale/biasCorrected.php";
   //$url = "http://172.22.52.8/PHPMailer/bias_process.php";
-  $url = "http://maprooms.ciat.cgiar.org/CCAFS-Climate/PHPMailer/bias_process.php";
+ // $url = "http://maprooms.ciat.cgiar.org/CCAFS-Climate/PHPMailer/bias_process.php";
+ $url = "http://backend.ccafs-climate.org/bias_correction.php";
   //$url = "http://172.22.52.8/PHPMailer/example.php";
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL, $url);

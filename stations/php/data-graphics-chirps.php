@@ -2,16 +2,10 @@
 
 	/*require_once '../../config/db.php';
 	require_once '../../config/smarty.php';*/
-	// include_once('../config/db_ccafs_climate.php');
-	//http://172.22.52.48/stations/php/data-graphics-chirps.php?lon=-76&lat=4&yi=1981&yf=1981&mi=1&mf=1
-	define("PG_DB"  , "ccafs_climate");
-	define("PG_HOST", "172.22.52.15"); 
-	define("PG_USER", "jtarapues");
-	define("PG_PASS", "Jaime881");
-	define("PG_PORT", "5432"); 
-	define("SRID",   "4326"); 
-
-	  $dbcon = pg_connect("dbname=".PG_DB." host=".PG_HOST." user=".PG_USER." password=".PG_PASS." port=".PG_PORT);
+	include_once('../config/db_chirps.php');
+	//http://172.22.52.8/stations/php/data-graphics-chirps.php?lon=-76&lat=4&yi=2015&yf=2017&mi=1&mf=12&ch_chirps=true&ch_chirp=false&ch_wcl=true&ch_cru=true
+	
+    // $dbcon = pg_connect("dbname=".PG_DB." host=".PG_HOST." user=".PG_USER." password=".PG_PASS." port=".PG_PORT);
 	// $dirfilesStations="C:\xampp\htdocs\CCAFS-Climate\downloads";
 
 	$lon=$_REQUEST["lon"]; 
@@ -20,8 +14,13 @@
 	$yf=$_REQUEST["yf"];
 	$mi=$_REQUEST["mi"]; 
 	$mf=$_REQUEST["mf"]; 
+	$chirps=$_REQUEST["ch_chirps"]; 
+	$chirp=$_REQUEST["ch_chirp"]; 
+	$wcl=$_REQUEST["ch_wcl"]; 
+	$cru=$_REQUEST["ch_cru"]; 
+	$order=100;//$_REQUEST["mf"]; este no se está usando pero debe incluirse
 	
-	$sql ="select * from getValuesChirpsGlobal($lon,$lat,$yi,$yf,$mi,$mf)"; 
+	$sql ="select * from getValuesChirpsGlobal_v2($lon,$lat,$yi,$yf,$mi,$mf,$order,'".$chirps."','".$chirp."','".$wcl."','".$cru."')"; 
 	$result = pg_query($dbcon, $sql);
 	// $row = pg_fetch_row($result);
 	// print $row[0];
@@ -33,6 +32,10 @@
 					'sdate' => $yi.'-'.$mi.'-01',
 					'data' => array()
 					),
+			"prchirp" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),					
 			"monthly" => array(
 					'sdate' => $yi.'-'.$mi.'-01',
 					'data' => array()
@@ -41,8 +44,50 @@
 					'sdate' => $yi.'-'.$mi.'-01',
 					'data' => array()
 					),
+			"wcl_prec" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),
+			"wcl_tmin" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),
+			"wcl_tmax" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),					
+			"rainy" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),
+			"wetdays" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),	
+			"annual" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),
+			"cru_prec" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),	
+			"cru_tmin" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),	
+			"cru_tmax" => array(
+					'sdate' => $yi.'-'.$mi.'-01',
+					'data' => array()
+					),						
 			"stats" => array(
 					'data' => array()
+					),
+			"database" => array(
+					"chirps"=>$chirps,
+					"chirp"=>$chirp,
+					"wcl"=>$wcl,
+					"cru"=>$cru
 					)					
 	);
 				
@@ -59,13 +104,49 @@
 		}	
 		if($line['type']=="4"){
 			array_push($geojson['stats']['data'],floatval($line['prec']));
+		}
+		if($line['type']=="5"){
+			array_push($geojson['wcl_prec']['data'],floatval($line['prec']));
+		}
+		if($line['type']=="6"){
+			array_push($geojson['wcl_tmin']['data'],floatval($line['prec']));
+		}
+		if($line['type']=="7"){
+			array_push($geojson['wcl_tmax']['data'],floatval($line['prec']));
+		}
+		if($line['type']=="8"){
+			array_push($geojson['rainy']['data'],floatval($line['prec']));
+		}
+		if($line['type']=="9"){
+			array_push($geojson['wetdays']['data'],floatval($line['prec']));
+		}
+		if($line['type']=="10"){
+			array_push($geojson['annual']['data'],floatval($line['prec']));
+		}	
+		if($line['type']=="11"){
+			array_push($geojson['cru_prec']['data'],floatval($line['prec']));
+		}	
+		if($line['type']=="12"){
+			array_push($geojson['cru_tmin']['data'],floatval($line['prec']));
+		}	
+		if($line['type']=="13"){
+			array_push($geojson['cru_tmax']['data'],floatval($line['prec']));
+		}	
+		if($line['type']=="14"){
+			array_push($geojson['prchirp']['data'],floatval($line['prec']));
 		}		
 	}
+
+
+	// $especie = json_encode($geojson);
+
+	// $sqli ="INSERT INTO station_downloads_chirps (lon, lat,yi,yf,mi,mf,chirps,chirp,wcl,cru) VALUES
+	// (".$lon.",".$lat.",".$yi.",".$yf.",".$mi.",".$mf.",'".serialize($chirps)."','".serialize($chirp)."','".serialize($wcl)."', '".serialize($cru)."'); ";
+   // $ret = pg_exec($dbcon, $sqli);
+   
 	pg_close($dbcon);
 	echo json_encode($geojson);	  
-	// $especie = json_encode($geojson);
 	
-
 	// header('Content-type: application/json',true);
 	
 	// echo $especie;  	

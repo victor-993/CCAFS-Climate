@@ -13,7 +13,7 @@ $periodh = isset($_REQUEST["periodh"]) ? $_REQUEST["periodh"] : null;
 $fileSet = isset($_REQUEST["fileSet"]) && is_numeric($_REQUEST["fileSet"]) && $_REQUEST["fileSet"] >= 0 ? $_REQUEST["fileSet"] : null;
 $observation = isset($_REQUEST["observation"]) ? $_REQUEST["observation"] : null;
 $station_file = isset($_FILES["station-file"]["tmp_name"]) ? $_FILES["station-file"]["tmp_name"] : null;
-
+$delimitator = isset($_REQUEST["delimit"]) ? $_REQUEST["delimit"] : '';
 
 //$extentId = isset($_REQUEST["extent"]) && is_numeric($_REQUEST["extent"]) && $_REQUEST["extent"] >= 0 ? $_REQUEST["extent"] : null;
 //$tile = isset($_REQUEST["tile_name"]) && $_REQUEST["tile_name"] != "" ? $_REQUEST["tile_name"] : null;
@@ -49,16 +49,26 @@ if ($station_file && $code==0) {
     $url = SMARTY_ROOT_URI."bias_tmp/";
     $file = $url.$filename;
   }
-
+	// print_r($delimitator);
+    if($delimitator=="space"){
+		$sepFile=" ";
+	} elseif ($delimitator=="tab"){
+		$sepFile="\t";
+	}elseif ($delimitator=="puntocoma"){
+		$sepFile=";";
+	}elseif ($delimitator=="comma"){
+		$sepFile=",";
+	}
+	
 	$myfile = file($uri);
 	$varlist = array("prec","tmin","tmax","tmean","srad");
 	$namescol = array("date","prec","tmin","tmax","tmean","srad");
 	// $namescol = array("0"=>"date","1"=>"prec","2"=>"tmin","3"=>"tmax","4"=>"tmean","5"=>"srad");
 	// $colnames = explode("\t", substr($myfile[0], 0, -2));
-	$colnames = explode("\t", trim($myfile[0]));
-	$start1 = explode("\t", $myfile[1]);
+	$colnames = explode($sepFile, trim($myfile[0]));
+	$start1 = explode($sepFile, $myfile[1]);
 	$start = substr($start1[0], 0, 4)."-".substr($start1[0], 4, 2)."-".substr($start1[0], 6, 2);
-	$end1   = explode("\t", $myfile[count($myfile)-1]);
+	$end1   = explode($sepFile, $myfile[count($myfile)-1]);
 	$end   = substr($end1[0], 0, 4)."-".substr($end1[0], 4, 2)."-".substr($end1[0], 6, 2);
 	$periodst=substr($start1[0], 0, 4).';'.substr($end1[0], 0, 4);
 	
@@ -222,20 +232,27 @@ if (isset($_REQUEST["email"]) && $_REQUEST["email"] != "" && $_REQUEST["email"] 
    $getLastRegister="select id from datasets_download_bias order by id desc limit 1";
    $getID = $db->getAll($getLastRegister);
 	$vars['order'] =$getID[0][0];
- 
+  $Date_Submitted=date("d-M-Y h:i:s");
+  $vars["Date_Submitted"]=$Date_Submitted;
+  
  // echo "<pre>".print_r($vars,true)."</pre>";
  // echo $vars;
 //  $url = "http://172.22.52.62/correctedTest.php";
 // exit();
 
 
-  $url = "http://gisweb.ciat.cgiar.org/Bc_Downscale/biasCorrected.php";
+  // $url = "http://gisweb.ciat.cgiar.org/Bc_Downscale/biasCorrected.php";
+  //$url = "http://172.22.52.8/PHPMailer/bias_process.php";
+ // $url = "http://maprooms.ciat.cgiar.org/CCAFS-Climate/PHPMailer/bias_process.php";
+ $url = "http://backend.ccafs-climate.org/bias_correction.php";
+  //$url = "http://172.22.52.8/PHPMailer/example.php";
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL, $url);
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
   curl_setopt($curl, CURLOPT_HEADER, false);
   curl_setopt($curl, CURLOPT_POST, count($vars));
-  curl_setopt($curl, CURLOPT_POSTFIELDS, $vars);
+  // curl_setopt($curl, CURLOPT_POSTFIELDS, $vars);
+  curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($vars));
   curl_setopt($curl, CURLOPT_TIMEOUT, 4);
   $data = curl_exec($curl);
   curl_close($curl);

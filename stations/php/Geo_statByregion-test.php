@@ -337,15 +337,8 @@ if($type==5){
 	// print_r(pg_fetch_all($result));
 	// exit();	
 	
-	
+	// echo($level);
 	while($line = pg_fetch_assoc($result)){
-		
-		// if($line['copyright']==$levelName){
-			// $copyright=$line['copyright'];
-		// }else{
-			// $copyright="Restricted";
-		// }
-	
 		if($level==1){
 			$levelName="Restricted"; 
 			if($line['copyright']==$levelName){
@@ -357,6 +350,9 @@ if($type==5){
 			$levelName="Free";
 			$copyright=$levelName;
 		}else if($level==3){
+			$levelName="Free";
+			$copyright=$levelName;
+		}else if($line['access_level']==$level){
 			$levelName="Free";
 			$copyright=$levelName;
 		}else{
@@ -631,6 +627,9 @@ $sql_tabla ="select DISTINCT s.id, s.code,s.name, c.name category,i.name institu
 		}else if($level==3){
 			$levelName="Free";
 			$copyright=$levelName;
+		}else if($line['access_level']==$level){
+			$levelName="Free";
+			$copyright=$levelName;
 		}else{
 			$copyright=$line['copyright'];
 		}
@@ -884,9 +883,13 @@ if($type==14){
 		}else if($level==3){
 			$levelName="Free";
 			$copyright=$levelName;
+		}else if($line['access_level']==$level){
+			$levelName="Free";
+			$copyright=$levelName;
 		}else{
 			$copyright=$line['copyright'];
-		}	
+		}
+		
 		$feature = array(
 						'id' => $line['id'],					
 						'code' => $line['code'],
@@ -1417,7 +1420,6 @@ if($type==27){
 
 	$page_protect = new Access_user;
 	$level= $page_protect->get_access_level();	
-	
 	$sqlCheck ="SELECT s.access_level ,s.copyrigth FROM geostation as s WHERE id=".$idstat;
  
  	$result = pg_query($dbcon, $sqlCheck);	
@@ -1436,8 +1438,11 @@ if($type==27){
 	}else if($level==3){
 		$levelName=3;
 		$copyright=$levelName;
+	}else if($row[1]==$level){
+			$levelName="Free";
+			$copyright=$levelName;
 	}else{
-		$copyright=$row[1];
+	$copyright=$row[1];
 	}
 	
 	if( $copyright==3){

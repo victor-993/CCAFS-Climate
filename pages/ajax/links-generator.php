@@ -12,7 +12,7 @@ $fileSet = isset($_POST["fileSet"]) ? $_POST["fileSet"] : null;
 $fileType = isset($_POST["fileType"]) ? $_POST["fileType"] : null;
 $tileName = isset($_POST["tileName"]) ? $_POST["tileName"] : null;
 
-if ($fileSet==12 or $fileSet==10 or $fileSet==9 or $fileSet==7){
+if ($fileSet==12 or $fileSet==10 or $fileSet==9 or $fileSet==7 or $fileSet==13){
 $links_urls=LINKS_AWS_URI;
 }else{
 $links_urls=LINKS_BASE_URI;

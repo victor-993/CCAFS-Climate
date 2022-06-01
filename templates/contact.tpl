@@ -80,48 +80,16 @@
                     </span>
                 </td>
                 <td>
-                    <b>Héctor Tobón</b>
+                    <b>IT Support team</b>
                     <br>
                     <span class="contact-info">
-                    Data Manager &amp; Web Developer
+                    Helpdesk
                     <br>
-                    Decision and Policy Analysis (DAPA)
+                    Alliance Bioversity International - CIAT
                     <br>
-                    International Center for Tropical Agriculture (CIAT)
-                    <br>
-                    <a href="mailto:h.f.tobon@cgiar.org">h.f.tobon@cgiar.org</a>
+                    <a href="mailto:alliance-itsupport@cgiar.org">alliance-itsupport@cgiar.org</a>
                     </span>
 		    <br>
-                    <br>
-
-
-		    <b>Steven Sotelo</b>
-                    <br>
-                    <span class="contact-info">
-                    Technical Support
-                    <br>
-                    Decision and Policy Analysis (DAPA)
-                    <br>
-                    International Center for Tropical Agriculture (CIAT)
-                    <br>
-                    <a href="mailto:h.sotelo@cgiar.org ">h.sotelo@cgiar.org </a>
-                    </span>
-                    <br>
-                    <br>
-
-
-		    <b>Juan Camilo Garcia</b>
-                    <br>
-                    <span class="contact-info">
-                    Technical Support
-                    <br>
-                    Decision and Policy Analysis (DAPA)
-                    <br>
-                    International Center for Tropical Agriculture (CIAT)
-                    <br>
-                    <a href="mailto:juan.garcia@cgiar.org ">juan.garcia@cgiar.org </a>
-                    </span>
-                    <br>
                     <br>
 
                 </td>

@@ -83,8 +83,6 @@
                     <b>IT Support team</b>
                     <br>
                     <span class="contact-info">
-                    Helpdesk
-                    <br>
                     Alliance Bioversity International - CIAT
                     <br>
                     <a href="mailto:alliance-itsupport@cgiar.org">alliance-itsupport@cgiar.org</a>

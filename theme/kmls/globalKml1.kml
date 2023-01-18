@@ -6,7 +6,7 @@
 		<IconStyle>
 			<scale>1.2</scale>
 			<Icon>
-				<href>http://www.ccafs-climate.org/theme/images/icon-pdf.png</href>
+				<href>https://www.ccafs-climate.org/theme/images/icon-pdf.png</href>
 			</Icon>
 			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
 		</IconStyle>

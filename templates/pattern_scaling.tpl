@@ -120,7 +120,7 @@
         Find the full list of models and scenarios, assessment of the methods used, comments on the limitations of the data, and suggestions for further work at the full report before proceeding to downloading and using the dataset.
     </p>
     <p>
-      Find the full list of models and scenarios, assessment of the methods used, comments on the limitations of the data, and suggestions for further work at the <a target="_blank" href="http://ccafs-climate.org/downloads/docs/MarkSim_Standalone_Documentation_v2.pdf"><i>full report</i></a> and disclaimers. To download see the <a href="http://www.ccafs-climate.org/data/">Data Section</a>.
+      Find the full list of models and scenarios, assessment of the methods used, comments on the limitations of the data, and suggestions for further work at the <a target="_blank" href="https://www.ccafs-climate.org/downloads/docs/MarkSim_Standalone_Documentation_v2.pdf"><i>full report</i></a> and disclaimers. To download see the <a href="https://www.ccafs-climate.org/data/">Data Section</a>.
     </p>
     <h4>Credits</h4>
     <ol>

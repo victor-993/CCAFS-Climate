@@ -65,7 +65,7 @@
             <table class="lista2" >
                 <tr class="FPar">
                     <td><a href="oai2.php?verb=Identify" target="_blank">Server address</a></td>
-                    <td>http://ccafs-climate.org/pages/oai2/oai2.php</td>
+                    <td>https://www.ccafs-climate.org/pages/oai2/oai2.php</td>
                 </tr>
                 <tr class="FImpar">
                     <td width="20%"><a href="oai2.php?verb=Identify" target="_blank">Identify</a></td>

@@ -2811,7 +2811,7 @@ var bton_sign_Up = new Ext.Button({
 									// collapsible: true,
 									// collapsed: false,
 									// buttonAlign: 'right',
-									html: '<p style="color:#95999A">If you want to access restricted weather stations data please <a href="http://ccafs-climate.org/contact/" target="_blank">contact us.</a></p>'
+									html: '<p style="color:#95999A">If you want to access restricted weather stations data please <a href="https://www.ccafs-climate.org/contact/" target="_blank">contact us.</a></p>'
 									// items: []								
 									/*
 									xtype: 'checkboxfield',
@@ -2820,7 +2820,7 @@ var bton_sign_Up = new Ext.Button({
 									hideLabel: true,
 									style: 'margin-top:15px',
 									// boxLabel: 'I have read and accept the <a href="http://172.22.52.48/downloads/docs/cordex_terms_of_use_stations.pdf" class="terms">Terms of Use</a>.',
-									boxLabel: 'I have read and accept the <a href="http://ccafs-climate.org/downloads/docs/cordex_terms_of_use_stations.pdf" class="terms">Terms of Use</a>.',
+									boxLabel: 'I have read and accept the <a href="https://www.ccafs-climate.org/downloads/docs/cordex_terms_of_use_stations.pdf" class="terms">Terms of Use</a>.',
 						 
 									// Listener to open the Terms of Use page link in a modal window
 									listeners: {
@@ -13400,7 +13400,7 @@ var tabCount = 4;
 						
 				// {
 					// type: 'maximize',
-					// tooltip: 'Agrandir la fenêtre',
+					// tooltip: 'Agrandir la fenï¿½tre',
 					// handler: function (e, target, panelHdr) {
 						// var panel = panelHdr.up('panel');
 						// if (!panel.maximized) {

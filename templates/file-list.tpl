@@ -60,7 +60,7 @@
         <h4>*Status:</h4>
 		<ul>
 			<li>Available: data is available online.</li>
-			<li>Deprecated: data is old and only available by request. Go to <a href="http://ccafs-climate.org/contact/">contact</a> page.</li>		
+			<li>Deprecated: data is old and only available by request. Go to <a href="https://www.ccafs-climate.org/contact/">contact</a> page.</li>		
 			<li>In production: data is in production and will be available soon.</li>
 		</ul>
     </p>  	
